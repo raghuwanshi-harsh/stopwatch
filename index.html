@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STOPWATCH</title>
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <!-- Heading -->
+            <h1>Stopwatch</h1>
+            <!-- Display Timer -->
+            <div id="display">
+                00:00:00
+            </div>
+            <!-- Buttons -->
+            <div class="button-container">
+                <button onclick="start()">Start</button>
+                <button onclick="stop()">Stop</button>
+                <button onclick="flag()">Flag</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+            <!-- Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lap Number</th>
+                        <th>Lap Time</th>
+                        <th>Total Time</th>
+                    </tr>
+                </thead>
+                <tbody id="lapTableBody">
+                    <!-- Lap data rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
